@@ -1,0 +1,216 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables CSS - Design System */
+:root {
+    --color-rose: #FD7EDB;
+    --color-blue: #01FFFF;
+    --color-dark: #130B32;
+    --color-dark-blue: #2B187B;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'TBJ Fluke';
+    src: url('../assets/fonts/TBJFluke-Bold.woff2') format('woff2'),
+         url('../assets/fonts/TBJFluke-Bold.woff') format('woff'),
+         url('../assets/fonts/TBJFluke-Bold.ttf') format('truetype'),
+         url('../assets/fonts/TBJFluke-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TBJ Fluke';
+    src: url('../assets/fonts/TBJFluke-Light.woff2') format('woff2'),
+         url('../assets/fonts/TBJFluke-Light.woff') format('woff'),
+         url('../assets/fonts/TBJFluke-Light.ttf') format('truetype'),
+         url('../assets/fonts/TBJFluke-Light.otf') format('opentype');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: var(--color-dark);
+    overflow-x: hidden;
+    
+}
+
+/* Section Hero */
+#hero {
+    height: 90vh;
+    background-image: url('../assets/img/bg-hero.webp');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+/* Image Hippodrome */
+.hero-hippodrome {
+    position: absolute;
+    bottom: -230px;
+    right: -340px;
+    width: 800px;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Ajustements responsives pour l'hippodrome */
+@media (max-width: 480px) {
+    .hero-hippodrome {
+        width: 600px;
+        bottom: -600px;
+        right: -440px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-hippodrome {
+        width: 1000px;
+        bottom: -300px;
+        right: -340px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-hippodrome {
+        width: 1400px;
+        bottom: -440px;
+        right: -340px;
+    }
+}
+
+
+/*logo hero*/
+.hero-logo {
+    width: 60%;
+    object-fit: contain;
+}
+
+/*infos hero*/
+.hero-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.hero-infos h3 {
+    color: white;
+    font-family: 'TBJ Fluke', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.infos-separator {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* #region Bouton Hero */
+/* Wrapper du bouton pour l'ombre */
+.button-wrapper {
+    position: relative;
+    display: inline-block;
+    filter: drop-shadow(0 1px 0 var(--color-blue))
+            drop-shadow(0 2px 0 var(--color-blue))
+            drop-shadow(0 3px 0 var(--color-blue))
+            drop-shadow(0 4px 0 var(--color-blue))
+            drop-shadow(0 4px 8px rgba(1, 255, 255, 0.4));
+    transition: filter 0.1s ease;
+}
+
+/* Bouton Découvrir */
+.btn.hero-button {
+    font-family: 'TBJ Fluke', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--color-dark-blue);
+    background-color: var(--color-rose);
+    border: none;
+    padding: 18px 56px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    clip-path: polygon(49% 5%, 95% 13%, 94% 48%, 97% 88%, 75% 96%, 37% 87%, 0 92%, 3% 36%, 0 15%);
+    overflow: hidden;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Effet shimmer */
+.btn.hero-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transform: translateX(-100%);
+    animation: shimmer 3s infinite;
+    pointer-events: none;
+}
+
+/* Hover : le bouton s'écrase, les ombres se réduisent */
+.button-wrapper:hover {
+    filter: drop-shadow(0 0.5px 0 var(--color-blue))
+            drop-shadow(0 1px 0 var(--color-blue))
+            drop-shadow(0 1.5px 0 var(--color-blue))
+            drop-shadow(0 2px 0 var(--color-blue))
+            drop-shadow(0 2px 4px rgba(1, 255, 255, 0.3));
+}
+
+.button-wrapper:hover .btn.hero-button {
+    transform: translateY(1px);
+}
+
+/* Click : plus d'ombre, le bouton est complètement enfoncé */
+.button-wrapper:active {
+    filter: none;
+}
+
+.button-wrapper:active .btn.hero-button {
+    transform: translateY(2px);
+}
+
+/* Animation shimmer */
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+/* #endregion */
