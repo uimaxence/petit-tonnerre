@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Petit Tonnerre Festival - Un festival et un village éphémère à Angers, été 2026">
     <title>Petit Tonnerre Festival - Angers 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,18 +38,128 @@
 
     <!-- Section Le projet -->
     <section id="projet">
+        <div class="projet-content">
+            <div class="projet-title">
+                <h1>Petit Tonnerre Festival</h1>
+                <h2>Un pr<span class="letter-o">o</span>jet <span class="word-unique">un<span class="letter-i">i</span>que</span> ce prépare à Angers</h2>
+            </div>
+            <div class="projet-description">
+                <p>Petit Tonnerre Festival est un projet unique qui se déroulera à Angers en 2026. Il s'agit d'un festival qui se déroulera pendant 1 journée  et qui sera axé sur la musique et le divertissement.</p>
+                <p class="p-secondary">Plus d'infos très bientôt !</p>
+            </div>
+            
+        </div>
     </section>
 
-    <!-- Section Événement à venir -->
-    <section id="evenement">
+    <!-- Section Valeurs -->
+    <div class="valeurs-wrapper">
+        <section id="valeur">
+            <div class="valeurs-title">
+                <h2>Nos valeurs & nos missions</h2>
+            </div>
+            <div class="valeurs-content">
+                <div class="valeurs-cards">
+                    <div class="valeur-card valeur-card-1">
+                        <h3 class="valeur-title">Racines Locales</h3>
+                        <p class="valeur-description">Mettre en lumière les talents et les initiatives d'Angers et de sa région, pour un festival ancré dans son territoire et ouvert à tous.</p>
+                    </div>
+                    <div class="valeur-card valeur-card-2">
+                        <h3 class="valeur-title">Créer des souvenirs</h3>
+                        <p class="valeur-description">Inventer des expériences uniques, tout en soutenant des initiatives culturelles et solidaires près de chez nous.</p>
+                    </div>
+                    <div class="valeur-card valeur-card-3">
+                        <h3 class="valeur-title">Créativité</h3>
+                        <p class="valeur-description">Innover pour offrir une expérience unique, tout en soutenant des projets culturels et solidaires locaux.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section Partenaires -->
+    <section id="partenaires">
+        <img src="assets/img/nuage.svg" alt="Nuage" class="decorative-svg svg-nuage" data-speed="0.3">
+        <img src="assets/img/eclair.svg" alt="Éclair" class="decorative-svg svg-eclair-1" data-speed="0.5">
+        <img src="assets/img/eclair-ombre.svg" alt="Éclair ombre" class="decorative-svg svg-eclair-2" data-speed="0.4">
+        <img src="assets/img/plume.svg" alt="Plume" class="decorative-svg svg-plume-1" data-speed="0.6">
+        <img src="assets/img/plume-blanche.svg" alt="Plume blanche" class="decorative-svg svg-plume-2" data-speed="0.35">
+        <img src="assets/img/fer-a-cheval.svg" alt="Fer à cheval" class="decorative-svg svg-fer" data-speed="0.45">
+        <div class="partenaires-content">
+            <div class="partenaires-title">
+                <h2>Des soirées et des surprises avant l'été 2026</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="button-partenaires">
+        <div class="button-wrapper">
+            <button class="btn hero-button">Devenez partenaire</button>
+        </div>
+        <p class="p-secondary">Plus d'infos très bientôt !</p>
     </section>
 
     <!-- Section Contact -->
     <section id="contact">
+        <div class="contact-content">
+            <div class="contact-header">
+                <img src="assets/img/eclair.svg" alt="Éclair" class="contact-icon">
+                <h2>Contact</h2>
+                <p class="contact-subtitle">Vous avez une question ?</p>
+            </div>
+            <form class="contact-form" id="contact-form" novalidate>
+                <div class="form-group">
+                    <input type="text" id="prenom" name="prenom" required>
+                    <label for="prenom">Prénom *</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="nom">Nom *</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email *</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Message *</label>
+                </div>
+                <div class="form-message" id="form-message"></div>
+                <div class="button-wrapper">
+                    <button type="submit" class="btn hero-button">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section Licorne -->
+    <section id="licorne">
+        <img src="assets/img/licorne.webp" alt="Licorne Petit Tonnerre" class="licorne-img">
+        <blockquote class="licorne-quote">
+            <p>D'où qu'elles viennent et où qu'elles soient allées, les licornes vivent dans le cœur du vrai croyant. Ce qui signifie que tant que nous pourrons rêver, il y aura des licornes.</p>
+            <cite>Bruce Coville</cite>
+        </blockquote>
     </section>
 
     <!-- Footer -->
-    <footer>
-    </footer>
+    <div class="footer-wrapper">
+        <span class="footer-rose-line" aria-hidden="true"></span>
+        <footer class="footer">
+        <div class="footer-content">
+            <h3 class="footer-title">Restez informé</h3>
+            <div class="footer-social">
+                <a href="#" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">IG</span></a>
+                <a href="#" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">FB</span></a>
+                <a href="#" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">IN</span></a>
+            </div>
+            <a href="#mentions-legales" class="footer-legal">Mentions légales</a>
+            <div class="footer-bottom">
+                <img src="assets/img/blue-flash.webp" alt="" class="footer-bolt" aria-hidden="true">
+                <p class="footer-copyright">2026 – Petit tonnerre</p>
+            </div>
+        </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

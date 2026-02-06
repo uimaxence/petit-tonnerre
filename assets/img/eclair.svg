@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99.13 191.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_8);
+        mix-blend-mode: multiply;
+      }
+
+      .cls-3 {
+        mask: url(#mask);
+      }
+
+      .cls-4 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-5 {
+        filter: url(#luminosity-noclip-3);
+      }
+
+      .cls-6 {
+        mask: url(#mask-2);
+      }
+
+      .cls-7 {
+        mask: url(#mask-3);
+      }
+
+      .cls-8 {
+        mask: url(#mask-1);
+      }
+
+      .cls-9 {
+        fill: #140b33;
+      }
+
+      .cls-10 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-12 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-13 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-14 {
+        fill: url(#Nouvelle_nuance_de_dégradé_1_2-2);
+      }
+
+      .cls-15 {
+        fill: url(#Nouvelle_nuance_de_dégradé_1_2-3);
+      }
+
+      .cls-16 {
+        fill: aqua;
+      }
+
+      .cls-17 {
+        fill: url(#Nouvelle_nuance_de_dégradé_1);
+      }
+
+      .cls-18 {
+        fill: url(#Nouvelle_nuance_de_dégradé_1_2);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="3768.59" y="-600.11" width="3840" height="2160"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="3768.59" y="-2820.11" width="3840" height="2160"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <polygon class="cls-1" points="5201.21 -1029.69 3228.49 -271.54 3228.49 -901.84 5095.28 -1029.69 5201.21 -1029.69"/>
+    </clipPath>
+    <linearGradient id="Nouvelle_nuance_de_dégradé_1_2" data-name="Nouvelle nuance de dégradé 1 2" x1="2706.72" y1="-1155.58" x2="4335" y2="-2055.26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="aqua"/>
+      <stop offset=".78" stop-color="#140b33" stop-opacity=".9"/>
+    </linearGradient>
+    <clipPath id="clippath-3">
+      <rect class="cls-1" x="-131.41" y="-2820.11" width="3840" height="2160"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <polygon class="cls-1" points="1301.21 -1029.69 -671.51 -271.54 -671.51 -901.84 1195.28 -1029.69 1301.21 -1029.69"/>
+    </clipPath>
+    <linearGradient id="Nouvelle_nuance_de_dégradé_1_2-2" data-name="Nouvelle nuance de dégradé 1 2" x1="-1193.28" x2="435" y2="-2055.26" xlink:href="#Nouvelle_nuance_de_dégradé_1_2"/>
+    <filter id="luminosity-noclip" x="-1269.73" y="-1029.69" width="2924.59" height="1172.15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-2" x="37.32" y="-10891.89" width="1617.53" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="37.32" y="-10891.89" width="1617.53" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_8" data-name="ÂÁ˚ÏﬂÌÌ˚È „‡‰ËÂÌÚ 8" x1="1642.95" y1="-405.65" x2="99.54" y2="-402.09" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".45" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <mask id="mask" x="-1269.73" y="-1029.69" width="2924.59" height="1172.15" maskUnits="userSpaceOnUse">
+      <g class="cls-4">
+        <g class="cls-8">
+          <polygon class="cls-2" points="1654.85 -951.67 37.32 142.46 725.31 142.46 1654.85 -951.67"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="Nouvelle_nuance_de_dégradé_1_2-3" data-name="Nouvelle nuance de dégradé 1 2" x1="22.09" y1="-219.24" x2="1.51" y2="-946.55" xlink:href="#Nouvelle_nuance_de_dégradé_1_2"/>
+    <filter id="luminosity-noclip-3" x="-545.33" y="-1029.69" width="2200.18" height="1172.15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-4" x="37.32" y="-10891.89" width="1617.53" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-3" x="37.32" y="-10891.89" width="1617.53" height="32766" maskUnits="userSpaceOnUse"/>
+    <mask id="mask-2" x="-545.33" y="-1029.69" width="2200.18" height="1172.15" maskUnits="userSpaceOnUse">
+      <g class="cls-5">
+        <g class="cls-7">
+          <polygon class="cls-2" points="1654.85 -951.67 37.32 142.46 725.31 142.46 1654.85 -951.67"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="Nouvelle_nuance_de_dégradé_1" data-name="Nouvelle nuance de dégradé 1" x1="377.94" y1="215.85" x2="377.94" y2="-468.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f76ac2"/>
+      <stop offset="1" stop-color="#2a0556"/>
+    </linearGradient>
+  </defs>
+  <polygon class="cls-16" points="63.68 150.24 24.3 98.92 50.99 81.3 37.29 36.5 72.3 89.58 50.65 104.08 63.68 150.24"/>
+  <g class="cls-10">
+    <g class="cls-13">
+      <path class="cls-18" d="M2249.9,111.4L-697.76-843.75l3472.95-200.04,2575.54-3.44L2249.9,111.4ZM-681.77-844.43L2276.52,86.07l3067.94-1132.98-2570.58,3.31-3455.65,199.17Z"/>
+    </g>
+  </g>
+  <g class="cls-11">
+    <g>
+      <rect class="cls-9" x="-146.23" y="-1072.05" width="3868.81" height="1202.25"/>
+      <g class="cls-12">
+        <path class="cls-14" d="M-1650.1,111.4l-2947.66-955.15,3472.95-200.04,2575.54-3.44L-1650.1,111.4ZM-4581.77-844.43L-1623.48,86.07,1444.46-1046.91l-2570.58,3.31-3455.65,199.17Z"/>
+      </g>
+      <g>
+        <g class="cls-3">
+          <polygon class="cls-15" points="1301.21 -1029.69 -1269.73 142.46 -642.11 142.46 1301.21 -1029.69"/>
+        </g>
+        <g class="cls-6">
+          <polygon class="cls-17" points="1301.21 -1029.69 -545.33 142.46 -340.27 142.46 1301.21 -1029.69"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

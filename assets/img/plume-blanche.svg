@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 209.55 178.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_8);
+        mix-blend-mode: multiply;
+      }
+
+      .cls-3 {
+        mask: url(#mask);
+      }
+
+      .cls-4 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-5 {
+        filter: url(#luminosity-noclip-3);
+      }
+
+      .cls-6 {
+        fill: url(#radial-gradient);
+        mix-blend-mode: screen;
+        opacity: .3;
+      }
+
+      .cls-7 {
+        fill: url(#Dégradé_sans_nom_560);
+      }
+
+      .cls-8 {
+        isolation: isolate;
+      }
+
+      .cls-9 {
+        mask: url(#mask-2);
+      }
+
+      .cls-10 {
+        mask: url(#mask-3);
+      }
+
+      .cls-11 {
+        mask: url(#mask-1);
+      }
+
+      .cls-12 {
+        fill: #140b33;
+      }
+
+      .cls-13 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-14 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-15 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-16 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-17 {
+        fill: url(#Nouvelle_nuance_de_dégradé_1_2-4);
+      }
+
+      .cls-18 {
+        fill: url(#Nouvelle_nuance_de_dégradé_1_2-2);
+      }
+
+      .cls-19 {
+        fill: url(#Nouvelle_nuance_de_dégradé_1_2-3);
+      }
+
+      .cls-20 {
+        fill: #fff;
+      }
+
+      .cls-21 {
+        fill: url(#Dégradé_sans_nom_560-2);
+      }
+
+      .cls-22 {
+        fill: url(#Nouvelle_nuance_de_dégradé_1);
+      }
+
+      .cls-23 {
+        fill: url(#Nouvelle_nuance_de_dégradé_1_2);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="3048.29" y="-512.12" width="3840" height="2160"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="3048.29" y="-2732.12" width="3840" height="2160"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <polygon class="cls-1" points="4480.91 -941.7 2508.18 -183.54 2508.18 -813.85 4374.98 -941.7 4480.91 -941.7"/>
+    </clipPath>
+    <linearGradient id="Nouvelle_nuance_de_dégradé_1_2" data-name="Nouvelle nuance de dégradé 1 2" x1="1986.41" y1="-1067.59" x2="3614.7" y2="-1967.26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="aqua"/>
+      <stop offset=".78" stop-color="#140b33" stop-opacity=".9"/>
+    </linearGradient>
+    <clipPath id="clippath-3">
+      <rect class="cls-1" x="-851.71" y="-2732.12" width="3840" height="2160"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="3875.81" cy="-2718.29" fx="3875.81" fy="-2718.29" r="1372.32" gradientTransform="translate(-2045.64 1728.95) rotate(-4.67) scale(.86)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#291158" stop-opacity="0"/>
+      <stop offset=".07" stop-color="#34145b" stop-opacity=".05"/>
+      <stop offset=".2" stop-color="#511c64" stop-opacity=".19"/>
+      <stop offset=".37" stop-color="#802972" stop-opacity=".41"/>
+      <stop offset=".58" stop-color="#c03a86" stop-opacity=".71"/>
+      <stop offset=".77" stop-color="#ff4c99"/>
+      <stop offset="1" stop-color="#2d1b83" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clippath-4">
+      <polygon class="cls-1" points="580.91 -941.7 -1391.82 -183.54 -1391.82 -813.85 474.98 -941.7 580.91 -941.7"/>
+    </clipPath>
+    <linearGradient id="Nouvelle_nuance_de_dégradé_1_2-2" data-name="Nouvelle nuance de dégradé 1 2" x1="-1913.59" x2="-285.3" xlink:href="#Nouvelle_nuance_de_dégradé_1_2"/>
+    <linearGradient id="Nouvelle_nuance_de_dégradé_1_2-3" data-name="Nouvelle nuance de dégradé 1 2" x1="-1241.62" y1="-386.84" x2="199.3" y2="-1182.98" xlink:href="#Nouvelle_nuance_de_dégradé_1_2"/>
+    <linearGradient id="Dégradé_sans_nom_560" data-name="Dégradé sans nom 560" x1="189.7" y1="-930.06" x2="189.7" y2="213.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="aqua"/>
+      <stop offset=".78" stop-color="#140b33" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="Dégradé_sans_nom_560-2" data-name="Dégradé sans nom 560" x1="382.47" y1="-931.05" x2="382.47" y2="213.74" xlink:href="#Dégradé_sans_nom_560"/>
+    <filter id="luminosity-noclip" x="-1990.04" y="-941.7" width="2924.59" height="1172.15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-2" x="-682.99" y="-10979.88" width="1617.53" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="-682.99" y="-10979.88" width="1617.53" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_8" data-name="ÂÁ˚ÏﬂÌÌ˚È „‡‰ËÂÌÚ 8" x1="922.64" y1="-317.66" x2="-620.77" y2="-314.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".45" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <mask id="mask" x="-1990.04" y="-941.7" width="2924.59" height="1172.15" maskUnits="userSpaceOnUse">
+      <g class="cls-4">
+        <g class="cls-11">
+          <polygon class="cls-2" points="934.55 -863.68 -682.99 230.45 5 230.45 934.55 -863.68"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="Nouvelle_nuance_de_dégradé_1_2-4" data-name="Nouvelle nuance de dégradé 1 2" x1="-698.22" y1="-131.24" x2="-718.8" y2="-858.56" xlink:href="#Nouvelle_nuance_de_dégradé_1_2"/>
+    <filter id="luminosity-noclip-3" x="-1265.64" y="-941.7" width="2200.18" height="1172.15" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-4" x="-682.99" y="-10979.88" width="1617.53" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-3" x="-682.99" y="-10979.88" width="1617.53" height="32766" maskUnits="userSpaceOnUse"/>
+    <mask id="mask-2" x="-1265.64" y="-941.7" width="2200.18" height="1172.15" maskUnits="userSpaceOnUse">
+      <g class="cls-5">
+        <g class="cls-10">
+          <polygon class="cls-2" points="934.55 -863.68 -682.99 230.45 5 230.45 934.55 -863.68"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="Nouvelle_nuance_de_dégradé_1" data-name="Nouvelle nuance de dégradé 1" x1="-342.37" y1="303.85" x2="-342.37" y2="-380.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f76ac2"/>
+      <stop offset="1" stop-color="#2a0556"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-8">
+    <g id="Calque_1" data-name="Calque 1">
+      <g>
+        <path class="cls-20" d="M40.49,110.89c.07-.03.12-.09.15-.13,60.55-53.79,112.88-75.11,116.45-76.53-47.79,21.85-87.26,57.93-112.33,84.86-.12.11-.22.21-.3.33-18.71,20.1-29.32,35.04-29.32,35.04l-3.29-15.72c7.57-7.58,21.25-21.25,28.65-27.84Z"/>
+        <path class="cls-20" d="M139.17,78.72c-2.54,3.3-21.72,22.83-21.72,22.83l-24.2,14.53c-9.93-.37-27.45-3.52-27.45-3.52l16.52,12.1s-9.35,3.34-17.69,4.69c-8.34,1.35-17.81-7.54-17.81-7.54,19.27-22.94,55.73-49.91,55.73-49.91l36.63,6.81Z"/>
+        <path class="cls-20" d="M158.54,33.8c-12.88,1.37-56.38,26.86-56.38,26.86l15.57-38.84,25.87-3.64,47.61,6.1-24.42,25.3-24.27,2.94,20.83,2.67-18.77,16.65-38.77-1.95c21.16-18.76,52.72-36.1,52.72-36.1Z"/>
+        <path class="cls-20" d="M72.68,81.48l-.5-36.97c10.5-9.54,34.54-19.37,34.54-19.37l-6.29,36.5c-5.22,3.03-27.75,19.83-27.75,19.83Z"/>
+        <path class="cls-20" d="M39.72,108.92s-5.46-7.76-4.08-18.47c1.37-10.71,6.88-17.47,6.88-17.47l20.36-21.99,7.76,32.25c-16.93,10.94-30.92,25.68-30.92,25.68Z"/>
+      </g>
+      <g class="cls-13">
+        <g class="cls-16">
+          <path class="cls-23" d="M1529.59,199.4L-1418.07-755.76l3472.95-200.04,2575.54-3.44L1529.59,199.4ZM-1402.08-756.43L1556.21,174.06l3067.94-1132.98-2570.58,3.31-3455.65,199.17Z"/>
+        </g>
+      </g>
+      <g class="cls-14">
+        <g>
+          <circle class="cls-6" cx="1068.29" cy="-857.4" r="1173.43" transform="translate(919.17 504.27) rotate(-45)"/>
+          <rect class="cls-12" x="-866.54" y="-984.06" width="3868.81" height="1202.25"/>
+          <g class="cls-15">
+            <g>
+              <path class="cls-18" d="M-2370.41,199.4l-2947.66-955.15,3472.95-200.04,2575.54-3.44L-2370.41,199.4ZM-5302.08-756.43L-2343.79,174.06,724.15-958.92l-2570.58,3.31-3455.65,199.17Z"/>
+              <polygon class="cls-19" points="-2805.05 43.56 -2822.05 38.14 599.83 -958.91 605.06 -958.91 -2805.05 43.56"/>
+            </g>
+          </g>
+          <g>
+            <polygon class="cls-7" points="759.03 -942.12 193.24 -344.55 -372.55 253.01 -379.63 249.4 189.7 -346.36 759.03 -942.12"/>
+            <path class="cls-21" d="M829.87-942.36L385.34-344.37S-58.63,252.62-64.92,249.41l3.59-4.21L381.79-345.78l448.08-596.57Z"/>
+          </g>
+          <g>
+            <g class="cls-3">
+              <polygon class="cls-17" points="580.91 -941.7 -1990.04 230.45 -1362.42 230.45 580.91 -941.7"/>
+            </g>
+            <g class="cls-9">
+              <polygon class="cls-22" points="580.91 -941.7 -1265.64 230.45 -1060.58 230.45 580.91 -941.7"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
