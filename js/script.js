@@ -1,3 +1,44 @@
+// Scroll fluide : ancres (liens #) et boutons avec data-scroll-to
+function smoothScrollTo(targetId) {
+    var target = document.querySelector(targetId);
+    if (!target) return;
+    var start = window.pageYOffset;
+    var targetTop = target.getBoundingClientRect().top + start;
+    var targetHeight = target.offsetHeight;
+    var viewportHeight = window.innerHeight;
+    var end = targetTop - (viewportHeight / 2) + (targetHeight / 2);
+    var maxScroll = document.documentElement.scrollHeight - viewportHeight;
+    end = Math.max(0, Math.min(end, maxScroll));
+    var duration = 700;
+    var startTime = performance.now();
+    function step(timestamp) {
+        var progress = timestamp - startTime;
+        var ease = progress >= duration ? 1 : 1 - Math.pow(1 - progress / duration, 3);
+        window.scrollTo(0, start + (end - start) * ease);
+        if (progress < duration) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+            var targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            e.preventDefault();
+            smoothScrollTo(targetId);
+        });
+    });
+    document.querySelectorAll('.button-wrapper[data-scroll-to]').forEach(function(wrapper) {
+        wrapper.addEventListener('click', function(e) {
+            var targetId = this.getAttribute('data-scroll-to');
+            if (!targetId) return;
+            e.preventDefault();
+            smoothScrollTo(targetId);
+        });
+    });
+});
+
 // Animation des cards de valeurs au scroll
 document.addEventListener('DOMContentLoaded', function() {
     const valeurSection = document.getElementById('valeur');
@@ -150,9 +191,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Simulation d'envoi (à remplacer par un vrai appel API)
-            console.log('Données du formulaire:', data);
-            showMessage('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.', 'success');
+            // Envoi par mailto vers maxence.cailleau1@gmail.com
+            const subject = encodeURIComponent('Contact Petit Tonnerre Festival');
+            const body = encodeURIComponent(
+                'Prénom : ' + data.prenom + '\n' +
+                'Nom : ' + data.nom + '\n' +
+                'Email : ' + data.email + '\n\n' +
+                'Message :\n' + data.message
+            );
+            const mailtoLink = 'mailto:maxence.cailleau1@gmail.com?subject=' + subject + '&body=' + body;
+            window.location.href = mailtoLink;
+            
+            showMessage('Votre client mail va s\'ouvrir. Envoyez le message pour nous contacter.', 'success');
             this.reset();
             
             // Retirer la classe has-value après reset

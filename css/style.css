@@ -3,7 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Variables CSS - Design System */
@@ -46,8 +50,8 @@ body {
     color: #333;
     background-color: var(--color-dark);
     overflow-x: hidden;
-   
-    
+    width: 100%;
+    max-width: 100%;
 }
 
 h2 {
@@ -90,9 +94,17 @@ h2 {
 /* Ajustements responsives pour l'hippodrome */
 @media (max-width: 480px) {
     .hero-hippodrome {
-        width: 600px;
-        bottom: -600px;
-        right: -440px;
+        width: 500px;
+        bottom: -80px;
+        right: -280px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .hero-hippodrome {
+        width: 700px;
+        bottom: -180px;
+        right: -320px;
     }
 }
 
@@ -158,15 +170,18 @@ h2 {
 }
 
 /* #region Bouton Hero */
-/* Wrapper du bouton pour l'ombre */
+/* Wrapper : ombre nette (drop-shadow avec blur à 0, suit le clip-path du bouton) */
 .button-wrapper {
     position: relative;
     display: inline-block;
+    -webkit-filter: drop-shadow(0 1px 0 var(--color-blue))
+            drop-shadow(0 2px 0 var(--color-blue))
+            drop-shadow(0 3px 0 var(--color-blue))
+            drop-shadow(0 4px 0 var(--color-blue));
     filter: drop-shadow(0 1px 0 var(--color-blue))
             drop-shadow(0 2px 0 var(--color-blue))
             drop-shadow(0 3px 0 var(--color-blue))
-            drop-shadow(0 4px 0 var(--color-blue))
-            drop-shadow(0 4px 8px rgba(1, 255, 255, 0.4));
+            drop-shadow(0 4px 0 var(--color-blue));
     transition: filter 0.1s ease;
 }
 
@@ -182,6 +197,7 @@ h2 {
     position: relative;
     cursor: pointer;
     transition: transform 0.1s ease;
+    -webkit-clip-path: polygon(49% 5%, 95% 13%, 94% 48%, 97% 88%, 75% 96%, 37% 87%, 0 92%, 3% 36%, 0 15%);
     clip-path: polygon(49% 5%, 95% 13%, 94% 48%, 97% 88%, 75% 96%, 37% 87%, 0 92%, 3% 36%, 0 15%);
     overflow: hidden;
     box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
@@ -198,26 +214,66 @@ h2 {
     pointer-events: none;
 }
 
-/* Hover : le bouton s'écrase, les ombres se réduisent */
+/* Hover : ombre plus fine */
 .button-wrapper:hover {
+    -webkit-filter: drop-shadow(0 0.5px 0 var(--color-blue))
+            drop-shadow(0 1px 0 var(--color-blue))
+            drop-shadow(0 1.5px 0 var(--color-blue))
+            drop-shadow(0 2px 0 var(--color-blue));
     filter: drop-shadow(0 0.5px 0 var(--color-blue))
             drop-shadow(0 1px 0 var(--color-blue))
             drop-shadow(0 1.5px 0 var(--color-blue))
-            drop-shadow(0 2px 0 var(--color-blue))
-            drop-shadow(0 2px 4px rgba(1, 255, 255, 0.3));
+            drop-shadow(0 2px 0 var(--color-blue));
 }
 
 .button-wrapper:hover .btn.hero-button {
+    -webkit-transform: translateY(1px);
     transform: translateY(1px);
 }
 
-/* Click : plus d'ombre, le bouton est complètement enfoncé */
+/* Click : plus d'ombre, bouton enfoncé */
 .button-wrapper:active {
+    -webkit-filter: none;
     filter: none;
 }
 
 .button-wrapper:active .btn.hero-button {
+    -webkit-transform: translateY(2px);
     transform: translateY(2px);
+}
+
+/* Sur vrai mobile : le filter ne s'applique pas (Safari iOS), on utilise un calque ::before net à la place */
+@media (max-width: 768px) {
+    .button-wrapper {
+        -webkit-filter: none;
+        filter: none;
+        overflow: visible;
+    }
+    .button-wrapper::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        top: 4px;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        background: var(--color-blue);
+        -webkit-clip-path: polygon(49% 5%, 95% 13%, 94% 48%, 97% 88%, 75% 96%, 37% 87%, 0 92%, 3% 36%, 0 15%);
+        clip-path: polygon(49% 5%, 95% 13%, 94% 48%, 97% 88%, 75% 96%, 37% 87%, 0 92%, 3% 36%, 0 15%);
+        pointer-events: none;
+        transition: top 0.1s ease, bottom 0.1s ease, opacity 0.1s ease;
+    }
+    .button-wrapper:hover::before {
+        top: 2px;
+        bottom: -2px;
+    }
+    .button-wrapper:active::before {
+        opacity: 0;
+    }
+    .button-wrapper .btn.hero-button {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 /* Animation shimmer */
@@ -295,6 +351,13 @@ h2 {
         padding-left: 100px;
      }
 
+}
+
+@media (max-width: 768px) {
+
+    #projet{
+        margin-top: 100px;
+     }
 }
 
 .word-unique {
@@ -412,6 +475,7 @@ h2 {
 /* Section Valeurs */
 #valeur {
     padding: 120px 30px;
+    -webkit-clip-path: polygon(0% 0%, 29% 3%, 71% 2%, 89% 3%, 95% 8%, 100% 7%, 100% 95%, 61% 93%, 23% 96%, 14% 93%, 0% 91%);
     clip-path: polygon(0% 0%, 29% 3%, 71% 2%, 89% 3%, 95% 8%, 100% 7%, 100% 95%, 61% 93%, 23% 96%, 14% 93%, 0% 91%);    
     background-color: var(--color-rose);
     position: relative;
@@ -585,13 +649,14 @@ h2 {
 }
 
 
-/* Section Partenaires */
+/* Section Partenaires - overflow: visible pour que les SVG décoratifs dépassent en haut/bas (scroll horizontal géré par html/body) */
 #partenaires {
     max-width: 700px;
     margin: 0 auto;
     margin-top: 100px;
     padding: 120px 30px;
     position: relative;
+    overflow: visible;
     background-color: var(--color-dark);
 }
 
@@ -656,20 +721,14 @@ h2 {
 }
 
 /* Responsive */
-/*@media (max-width: 768px) {
-    
-    .svg-nuage {
-    top: 43px;
-    left: 25px;
-    width: 40%;
-}
+@media (max-width: 768px) {
 
-.svg-eclair-1 {
-    top: -90px;
-    z-index: 3;
-    right: -50px;
-    width: 40%;
-}
+    .svg-eclair-1 {
+        top: -100px;
+        z-index: 3;
+        right: -60px;
+        width: 170px;
+    }
 
 .svg-eclair-2 {
     top: 120px;
@@ -678,22 +737,16 @@ h2 {
 }
 
 .svg-plume-1 {
-    bottom: -50px;
-    left: 15px;
-    width: 40%;
+    bottom: -40px;
+    left: -35px;
+    width: 200px;
     z-index: 4;
 }
 
 .svg-plume-2 {
-    top: 150px;
-    right: 80px;
+    top: 180px;
+    right: 50px;
     width: 70px;
-}
-
-.svg-fer {
-    bottom: 80px;
-    right: 75px;
-    width: 23%;
 }
 }
 
@@ -892,31 +945,40 @@ h2 {
     flex-shrink: 0;
 }
 
-.licorne-quote {
+/* Wrapper pour la quote : le triangle est ici pour ne pas être coupé par le clip-path de la quote */
+.licorne-quote-wrap {
     flex: 1;
     min-width: 280px;
     max-width: 520px;
-    align-items: top;
+    margin: 0;
+    margin-top: -30px;
+    position: relative;
+}
+
+/* Triangle de la bulle (hors du blockquote pour ne pas être clipé) */
+.licorne-quote-wrap::after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: 15px;
+    border-width: 0 0 20px 30px;
+    border-style: solid;
+    border-color: transparent white white transparent;
+    z-index: 1;
+}
+
+.licorne-quote {
+    -webkit-clip-path: polygon(0% 2%, 37% 0%, 77% 3%, 97% 0%, 100% 14%, 99% 65%, 98% 90%, 89% 100%, 40% 100%, 0% 100%, 2% 57%, 0% 31%);
+    clip-path: polygon(0% 2%, 37% 0%, 77% 3%, 97% 0%, 100% 14%, 99% 65%, 98% 90%, 89% 100%, 40% 100%, 0% 100%, 2% 57%, 0% 31%);
     margin: 0;
     padding: 25px 30px;
     background: white;
-    border-radius: 20px;
     position: relative;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.licorne-quote::before {
-    content: '';
-    position: absolute;
-    left: 30px;
-    bottom: -15px;
-    border-width: 15px 15px 0 0;
-    border-style: solid;
-    border-color: white transparent transparent transparent;
-}
-
 .licorne-quote p {
-    font-family: 'Poppins', sans-serif;
+    font-family:  'TBJ Fluke', sans-serif;
     font-size: clamp(14px, 2vw, 16px);
     color: var(--color-dark);
     line-height: 1.6;
@@ -945,8 +1007,9 @@ h2 {
         margin-left: -80px;
     }
     
-    .licorne-quote {
+    .licorne-quote-wrap {
         max-width: 360px;
+        margin-top: -80px;
         min-width: 0;
     }
 }
@@ -965,6 +1028,7 @@ h2 {
     right: 0;
     height: 200px;
     background: var(--color-rose);
+    -webkit-clip-path: polygon(0% 0%, 85% 0%, 88% 5%, 90% 15%, 100% 10%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 85% 0%, 88% 5%, 90% 15%, 100% 10%, 100% 100%, 0% 100%);
     z-index: 1;
     pointer-events: none;
@@ -975,6 +1039,7 @@ h2 {
     padding: 50px 30px 40px;
     padding-top: 56px;
     position: relative;
+    -webkit-clip-path: polygon(0% 0%, 85% 0%, 88% 5%, 90% 15%, 100% 10%, 100% 100%, 0% 100%);
     clip-path: polygon(0% 0%, 85% 0%, 88% 5%, 90% 15%, 100% 10%, 100% 100%, 0% 100%);
     z-index: 2;
     margin-top: 0;
@@ -1009,11 +1074,14 @@ h2 {
     border: 2px solid var(--color-dark);
     border-radius: 50%;
     color: var(--color-dark);
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
     text-decoration: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-social-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
 }
 
 .footer-social-link:hover {
@@ -1037,14 +1105,16 @@ h2 {
 
 .footer-bottom {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 12px;
 }
 
 .footer-bolt {
-    width: 24px;
+    width: 28px;
     height: auto;
-    filter: hue-rotate(-50deg) brightness(1.1);
+    object-fit: contain;
 }
 
 .footer-copyright {
@@ -1058,6 +1128,7 @@ h2 {
 @media (max-width: 768px) {
     .footer {
         padding: 46px 20px 30px;
+        -webkit-clip-path: polygon(0% 0%, 85% 0%, 88% 5%, 90% 15%, 100% 10%, 100% 100%, 0% 100%);
         clip-path: polygon(0% 0%, 85% 0%, 88% 5%, 90% 15%, 100% 10%, 100% 100%, 0% 100%);
     }
     

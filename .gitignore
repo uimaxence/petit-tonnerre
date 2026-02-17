@@ -19,3 +19,6 @@ node_modules/
 # Build files (si vous en ajoutez plus tard)
 dist/
 build/
+
+# Mot de passe dev (ne jamais commiter)
+.htpasswd

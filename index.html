@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 <body>
     <!-- Navigation -->
@@ -30,8 +30,8 @@
                 </div>
                 
             </div>
-            <div class="button-wrapper">
-                <button class="btn hero-button">Découvrir</button>
+            <div class="button-wrapper" data-scroll-to="#projet">
+                <button type="button" class="btn hero-button">Découvrir</button>
             </div>
         </div>
     </section>
@@ -41,7 +41,7 @@
         <div class="projet-content">
             <div class="projet-title">
                 <h1>Petit Tonnerre Festival</h1>
-                <h2>Un pr<span class="letter-o">o</span>jet <span class="word-unique">un<span class="letter-i">i</span>que</span> ce prépare à Angers</h2>
+                <h2>Un pr<span class="letter-o">o</span>jet <span class="word-unique">un<span class="letter-i">i</span>que</span> se prépare à Angers</h2>
             </div>
             <div class="projet-description">
                 <p>Petit Tonnerre Festival est un projet unique qui se déroulera à Angers en 2026. Il s'agit d'un festival qui se déroulera pendant 1 journée  et qui sera axé sur la musique et le divertissement.</p>
@@ -92,8 +92,8 @@
     </section>
 
     <section id="button-partenaires">
-        <div class="button-wrapper">
-            <button class="btn hero-button">Devenez partenaire</button>
+        <div class="button-wrapper" data-scroll-to="#contact">
+            <button type="button" class="btn hero-button">Devenez partenaire</button>
         </div>
         <p class="p-secondary">Plus d'infos très bientôt !</p>
     </section>
@@ -134,10 +134,12 @@
     <!-- Section Licorne -->
     <section id="licorne">
         <img src="assets/img/licorne.webp" alt="Licorne Petit Tonnerre" class="licorne-img">
-        <blockquote class="licorne-quote">
-            <p>D'où qu'elles viennent et où qu'elles soient allées, les licornes vivent dans le cœur du vrai croyant. Ce qui signifie que tant que nous pourrons rêver, il y aura des licornes.</p>
-            <cite>Bruce Coville</cite>
-        </blockquote>
+        <div class="licorne-quote-wrap">
+            <blockquote class="licorne-quote">
+                <p>D'où qu'elles viennent et où qu'elles soient allées, les licornes vivent dans le cœur du vrai croyant. Ce qui signifie que tant que nous pourrons rêver, il y aura des licornes.</p>
+                <cite>Bruce Coville</cite>
+            </blockquote>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -147,13 +149,13 @@
         <div class="footer-content">
             <h3 class="footer-title">Restez informé</h3>
             <div class="footer-social">
-                <a href="#" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">IG</span></a>
-                <a href="#" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">FB</span></a>
-                <a href="#" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">IN</span></a>
+                <a href="#" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><img src="assets/img/instagram.svg" alt="" class="footer-social-icon"></a>
+                <a href="#" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><img src="assets/img/facebook.svg" alt="" class="footer-social-icon"></a>
+                <a href="#" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/img/linkedin.svg" alt="" class="footer-social-icon"></a>
             </div>
             <a href="#mentions-legales" class="footer-legal">Mentions légales</a>
             <div class="footer-bottom">
-                <img src="assets/img/blue-flash.webp" alt="" class="footer-bolt" aria-hidden="true">
+                <img src="assets/img/eclair-rose.svg" alt="" class="footer-bolt" aria-hidden="true">
                 <p class="footer-copyright">2026 – Petit tonnerre</p>
             </div>
         </div>
